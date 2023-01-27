@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_vermutenN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".SpielActivity">
+
+    <TextView
+        android:id="@+id/tv_landInfoN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="68dp"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_landN"
+        android:layout_width="261dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="48dp"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_landInfoN"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="@+id/tv_landInfoN"
+        app:layout_constraintTop_toBottomOf="@+id/tv_landInfoN" />
+
+    <EditText
+        android:id="@+id/editTextN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="deine Vermutung"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_landN"
+        app:layout_constraintStart_toStartOf="@+id/tv_landN"
+        app:layout_constraintTop_toBottomOf="@+id/tv_landN" />
+
+    <Button
+        android:id="@+id/btn_buschtabenN"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:onClick="btnBuschtabenN"
+        app:icon="@android:drawable/ic_menu_view"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextN"
+        app:layout_constraintTop_toBottomOf="@+id/editTextN" />
+
+    <Button
+        android:id="@+id/vermuten_buttonN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="19dp"
+        android:onClick="btnVermutenN"
+        android:text="Vermuten!"
+        app:layout_constraintEnd_toStartOf="@+id/btn_buschtabenN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextN"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_sumN"
+        android:layout_width="264dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="131dp"
+        android:text="Gesamt Pukte : 0"
+        android:textColor="#FB0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnRestartN"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="336dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="btnRestart"
+        app:icon="@android:drawable/ic_popup_sync"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
